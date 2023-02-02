@@ -507,44 +507,40 @@ img{
     background-color: var(--first-color);
 }
 
-.skills__laravel{
+.skills__nodejs{
+    width: 90%;
+}
+
+.skills__monogodb{
+    width: 90%;
+}
+
+.skills__expressjs{
     width: 80%;
 }
 
-.skills__django{
+.skills__sql{
     width: 60%;
 }
 
-.skills__php{
-    width: 80%;
-}
-
-.skills__typescript{
+.skills__solidity{
     width: 70%;
 }
 
 .skills__react{
+    width: 90%;
+}
+
+.skills__html{
     width: 70%;
 }
 
-.skills__material{
+.skills__css{
     width: 60%;
 }
 
 .skills__javascript{
-    width: 80%;
-}
-
-.skills__formik{
-    width: 60%;
-}
-
-.skills__mysql{
-    width: 80%;
-}
-
-.skills__graphql{
-    width: 70%;
+    width: 90%;
 }
 
 .skills__close .skills__list{
