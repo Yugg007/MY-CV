@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yugg007.github.io/TempFolio",
+  "homepage": "https://yugg007.github.io/MY-CV",
   "scripts": {
     "build": "vite build",
     "predeploy": "npm run build",
