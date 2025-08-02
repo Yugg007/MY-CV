@@ -74,18 +74,41 @@ export default function Portfolio() {
                 </Section>
 
                 <Section id="skills" title="Skills">
-                    <Grid container spacing={2}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            gap: 1.5,
+                            p: 2,
+                        }}
+                    >
                         {Skills.map((skill) => (
-                            <Grid item key={skill} xs={6} sm={4} md={3}>
-                                <Card sx={{ textAlign: "center", p: 2 }}>
-                                    <CardContent>
-                                        <Typography variant="subtitle1">{skill}</Typography>
-                                    </CardContent>
-                                </Card>
-                            </Grid>
+                            <Box
+                                key={skill}
+                                sx={{
+                                    px: 2.5,
+                                    py: 1,
+                                    borderRadius: "20px",
+                                    background: "linear-gradient(135deg, #e0f7fa, #e0f2f1)",
+                                    color: "#004d40",
+                                    fontWeight: 500,
+                                    fontSize: "0.95rem",
+                                    boxShadow: "0 1px 4px rgba(0,0,0,0.1)",
+                                    whiteSpace: "nowrap",
+                                    transition: "all 0.3s ease",
+                                    cursor: "default",
+                                    '&:hover': {
+                                        transform: "scale(1.05)",
+                                        boxShadow: "0 4px 10px rgba(0,0,0,0.15)",
+                                    },
+                                }}
+                            >
+                                #{skill}
+                            </Box>
                         ))}
-                    </Grid>
+                    </Box>
                 </Section>
+
 
                 <Section id="qualification" title="Qualification">
                     <Typography>🎓 B.Tech from NIT Trichy</Typography>
