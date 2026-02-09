@@ -1,12 +1,28 @@
-# React + Vite
+# 📄 My Digital CV / Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for my personal CV website. This project serves as a centralized, interactive, and web-based version of my professional background, skills, and projects.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+You can view the live version of my CV here : https://yugg007.github.io/MY-CV/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- **Responsive Design:** Optimized for viewing on desktops, tablets, and mobile devices.
+- **Interactive UI:** Smooth scrolling, hover effects, and modern layout.
+- **Project Showcase:** A dedicated section highlighting my key technical contributions and GitHub repositories.
+- **Contact Integration:** Easy access to my LinkedIn, Email, and social profiles.
+- **Downloadable PDF:** Direct link to download the traditional version of my resume.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **HTML5:** Semantic structure for accessibility and SEO.
+- **CSS3:** Custom styling (Flexbox/Grid) with a focus on modern aesthetics.
+- **JavaScript (Optional):** Interactive elements and dynamic content rendering.
+- **GitHub Pages:** Hosting and deployment.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+```text
+MY-CV/
+├── index.html    # Main entry point of the website
+├── css/          # Stylesheets (e.g., style.css)
+├── js/           # Interactive scripts (if any)
+├── assets/       # Images, icons, and the PDF version of my CV
+└── README.md     # Project documentation
