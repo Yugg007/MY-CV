@@ -115,9 +115,11 @@ const Project = () => {
                         <Button variant="contained" href={project.github} target="_blank">
                             GitHub
                         </Button>
-                        <Button variant="outlined" href={project.live} target="_blank">
-                            Live Demo
-                        </Button>
+                        {project.live && (
+                            <Button variant="outlined" href={project.live} target="_blank">
+                                Live Demo
+                            </Button>
+                        )}
                         <Button onClick={() => navigate("/")}>Go to Home</Button>
                     </Box>
                 </CardContent>

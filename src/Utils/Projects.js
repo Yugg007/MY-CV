@@ -1,51 +1,49 @@
 const Projects = [
-    {
-    id: "talentai",
-    name: "TalentAI – AI Resume Screener",
-    description: `
-A scalable, full-stack recruitment platform that streamlines job hunting and hiring processes through AI and real-time communication. The platform offers secure user authentication, job listing and creation capabilities, and a personalized AI news feed that surfaces trending updates in tech and programming.
-
-Key features include:
-- 🔍 AI-Driven ATS Scoring: Built an intelligent resume analyzer that compares candidate resumes against job descriptions using NLP and ML techniques. It provides personalized feedback, including do’s and don’ts, to optimize candidate profiles.
-- 💬 Real-Time Chat: Integrated Socket.IO to enable seamless communication between recruiters and candidates directly within the platform.
-- 📰 Personalized News Feed: Displays curated content on the latest tech trends and programming updates tailored to the user’s interests.
-
-Tech Stack: Spring Boot · React.js · Node.js · MySQL · MongoDB · AWS (EC2, S3, Route 53) · Socket.IO
-`
-    ,
-    github: "https://github.com/Yugg007/TalentAI",
-  },
-
   {
-    id : "whishper",
-    name : "Whishper App - Anonymous Secret Sharing Platform ",
-    github : "https://github.com/Yugg007/Whisper-App",
-    description : ` 
-Built a secure, full-stack web application that allows users to share secrets anonymously. Implemented robust user authentication using both OAuth 2.0 (Google) and local password strategy to ensure privacy and data security. Designed with a responsive React frontend and a scalable Node.js + Express backend, connected to MongoDB for persistent data storage. The app is deployed publicly on GitHub, enabling anyone to experience secure and anonymous message sharing in real time.
+    id: "routely",
+    name: "Routely – High-Concurrency Ride Sharing Platform",
+    github: "https://github.com/Yugg007/Routely", // Ensure this matches your repo name
+    description: `
+Engineered a cloud-native microservices ecosystem focused on high availability and sub-100ms latency. This project demonstrates enterprise-grade patterns for data consistency and real-time communication.
 
 Key features include:
-- 🔒 Authentication: Integrated Google OAuth 2.0 and traditional email-password login using Passport.js.
-- 🌐 Frontend: Designed an intuitive UI with React, providing seamless user experience and form handling.
-- 🚀 Backend: Developed RESTful APIs with Node.js and Express, ensuring efficient request handling and routing.
-- 🗄️ Database: Used MongoDB to store user credentials and secrets securely with encryption.
+- 🚀 Distributed Consistency: Implemented the Transactional Outbox Pattern and Kafka event-driven lifecycles to achieve 99.9% data consistency across services[cite: 85].
+- ⚡ Performance Optimization: Reduced driver-search latency by 60% by migrating from SQL lookups to Redis Geo-indexing (OpsForGeo)[cite: 88].
+- 🛠️ Scalable Communication: Architected a centralized 'routely-common' library using Protobuf (gRPC), reducing network payload sizes by 75% compared to standard JSON[cite: 86, 87].
+- 🛡️ Reliability & Security: Integrated API Gateway Rate Limiting (1,000+ req/s) and established a secure "Ride PIN Verification" handshake to eliminate unauthorized ride starts[cite: 90, 92].
+
+Tech Stack: Java · Spring Boot · Kafka · Redis · gRPC · Protobuf · Docker · React · Socket.IO
+`,
+  },
+  {
+    id: "talentai",
+    name: "TalentAI – AI Recruitment Platform",
+    github: "https://github.com/Yugg007/TalentAI",
+    description: `
+A cloud-native full-stack recruitment platform that automates hiring workflows through AI-driven insights and real-time networking[cite: 95].
+
+Key features include:
+- 🔍 AI-Driven ATS Engine: Developed an intelligent scoring system that analyzes resumes against job descriptions using custom prompts and NLP[cite: 97].
+- 💬 Real-Time Collaboration: Integrated Socket.IO for candidate-recruiter chat, peer interview scheduling, and instant UI state synchronization[cite: 96].
+- 🌐 Personalized Intelligence: Features a tech-specialized news feed and an AI chatbot optimized with caching for high performance[cite: 97].
+
+Tech Stack: Spring Boot · React.js · Node.js · MongoDB · AWS (EC2, S3) · Socket.IO · AI/LLM Integration
+`,
+  },
+  {
+    id: "whishper",
+    name: "Whishper – Anonymous Secret Sharing",
+    github: "https://github.com/Yugg007/Whisper-App",
+    description: `
+A secure, scalable web application for anonymous secret sharing, focusing on robust identity management and data privacy[cite: 44, 47].
+
+Key features include:
+- 🔒 Secure Auth: Implemented OAuth 2.0 (Google) and local passport strategies for encrypted, anonymous access.
+- 🚀 Scalable Backend: Developed a RESTful architecture using Node.js and Express with MongoDB for persistent, encrypted storage[cite: 47].
 
 Tech Stack: Node.js · Express.js · React.js · MongoDB · Passport.js · OAuth 2.0
-`
+  `,
   },
-
-
-  {
-    id: "skybnb",
-    name: "SkyBnb – Airbnb Clone",
-    description:
-      "A full-stack clone of Airbnb with property listings, booking system, and user authentication. Built using React, Spring Boot, and MongoDB.",
-  },
-  {
-    id: "investfin",
-    name: "InvestFin AI – Personal Finance Advisor",
-    description:
-      "Smart finance assistant offering budget insights, investment suggestions, and transaction analysis using Setu/FinBox APIs and AI models.",
-  }
 ];
 
 export default Projects;

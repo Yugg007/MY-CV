@@ -17,8 +17,10 @@ import {
 import { ArrowForwardIos, ArrowBackIos } from "@mui/icons-material";
 import { useNavigate, Link } from "react-router-dom";
 import Skills from "../Utils/Skills";
+import Projects from "../Utils/Projects";
 
 const sections = ["Home", "Skills", "Qualification", "Project", "Resume"];
+console.log(Projects);
 
 const projectsList = [
     { id: "talentai", name: "TalentAI – AI Resume Screener" },
@@ -41,13 +43,13 @@ export default function Portfolio() {
     const [projectIndex, setProjectIndex] = useState(0);
     useEffect(() => {
         const interval = setInterval(() => {
-            setProjectIndex((prevIndex) => (prevIndex + 1) % projectsList.length);
+            setProjectIndex((prevIndex) => (prevIndex + 1) % Projects.length);
         }, 3000);
         return () => clearInterval(interval);
     }, []);
 
-    const nextProject = () => setProjectIndex((projectIndex + 1) % projectsList.length);
-    const prevProject = () => setProjectIndex((projectIndex - 1 + projectsList.length) % projectsList.length);
+    const nextProject = () => setProjectIndex((projectIndex + 1) % Projects.length);
+    const prevProject = () => setProjectIndex((projectIndex - 1 + Projects.length) % Projects.length);
 
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -118,7 +120,7 @@ export default function Portfolio() {
 
                 <Section id="project" title="Projects">
                     <Grid container spacing={2}>
-                        {projectsList.map((project) => (
+                        {Projects.map((project) => (
                             <Grid item xs={12} sm={6} md={4} key={project.id}>
                                 <Card component={Link} to={`/project/${project.id}`} sx={{ textDecoration: "none" }}>
                                     <CardContent>
@@ -142,16 +144,17 @@ export default function Portfolio() {
 
                 <Section id="resume" title="Resume">
                     <Typography variant="body1" sx={{ mb: 2 }}>
-                        Click the button below to download my resume.
+                        Click the button below to view my resume.
                     </Typography>
                     <Button
                         variant="contained"
                         color="primary"
-                        href="/TempFolio/Yogendra Jhala.pdf"
-                        download
+                        href="https://drive.google.com/file/d/1gQpPXaddNeKPJR7BKDM0INslBWjXdlnP/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         sx={{ textTransform: "none" }}
                     >
-                        Download Resume
+                        View Resume
                     </Button>
                 </Section>
 
